@@ -6,113 +6,117 @@
     <title>Game Feedback</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
-    <main>
+    <header class="header">
+        <h1 class="">Jelly Beams</h1>
+    </header>
+    <main class="home">
         <form action="https://formspree.io/herbert.oliveira.veloso@gmail.com" method="POST">
-            <section>
-                <div class='form-group'>
-                    <label for="nome">Nome:</label>
+            <section class="form__box">
+                <h2 class="form__title">Informe seus dados  </h2>
+                <input type="hidden" value="Jelly Beams" />
+                <div class='form__item'>
+                    <label class="form__label" for="nome">*Nome:</label>
                     <input 
                         id='nome'
                         name='name'
                         type='text' 
-                        class='form-control' 
+                        class='form__input' 
                         placeholder='Nome Sobrenome' 
                         required 
                     />
                 </div>
-                <div class='form-group'>
-                    <label for="whatsapp">Whatsapp:</label>
+                <div class='form__item'>
+                    <label class="form__label" for="whatsapp">*Whatsapp:</label>
                     <input 
                         id='whatsapp'
                         name='whatsapp'
                         type='text' 
-                        class='form-control' 
+                        class='form__input' 
                         placeholder='(99)9999-9999' 
                         required 
                     />
                 </div>
-                <div class='form-group'>
-                    <label for="email">E-mail:</label>
+                <div class='form__item'>
+                    <label class="form__label" for="email">*E-mail:</label>
                     <input 
                         id='email'
                         name='email'
                         type='email' 
-                        class='form-control' 
+                        class='form__input' 
                         placeholder='email@exemplo.com' 
+                        required
                     />
                 </div>
             </section>
-            <section>
+            <section class="form__box">
+                <h2 class="form__title">Avalie o jogo</h2>
                 <div class='geralRating'>
                     <div class="estrelas">
-                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                        <input type="radio" id="cm_star-empty" name="Geral" value="" checked/>
                         <label for="cm_star-1"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                        <input type="radio" id="cm_star-1" name="Geral" value="1"/>
                         <label for="cm_star-2"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                        <input type="radio" id="cm_star-2" name="Geral" value="2"/>
                         <label for="cm_star-3"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                        <input type="radio" id="cm_star-3" name="Geral" value="3"/>
                         <label for="cm_star-4"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                        <input type="radio" id="cm_star-4" name="Geral" value="4"/>
                         <label for="cm_star-5"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        <input type="radio" id="cm_star-5" name="Geral" value="5"/>
                       </div>
                 </div>
-                <div class='form-group'>
-                    <label for="visual">Visual</label> <br/>
-                    
+                <div class='form__item'>
+                    <label class="form__label" for="visual">Visual</label>
                     <input 
                         id='visual'
-                        name='visualText'
+                        name='Visual'
                         type='text' 
-                        class='form-control' 
+                        class='form__input' 
                     />
                 </div>
-                <div class='form-group'>
-                    <label for="musica">Música</label> <br/>
-                   
+                <div class='form__item'>
+                    <label class="form__label" for="musica">Música</label> 
                     <input 
                         id='musica'
-                        name='musicaText'
+                        name='Musica'
                         type='text' 
-                        class='form-control' 
+                        class='form__input' 
                     />
                 </div>
-                <div class='form-group'>
-                    <label for="diversao">Diversão</label> <br/>
+                <div class='form__item'>
+                    <label class="form__label" for="diversao">Diversão</label> 
                     <input 
                         id='diversao'
-                        name='diversaoText'
+                        name='Diversao'
                         type='text' 
-                        class='form-control' 
+                        class='form__input' 
                     />
                 </div>
-                <div class='form-group'>
-                    <label for="inovacao">Inovação</label> <br/>
+                <div class='form__item'>
+                    <label class="form__label" for="inovacao">Inovação</label> 
                     <input 
                         id='inovacao'
-                        name='inovacaoText'
+                        name='Inovacao'
                         type='text' 
-                        class='form-control' 
+                        class='form__input' 
                     />
                 </div>
-                <div class='form-group'>
-                    <label for="potencial">Potencial de Vendas</label> <br/>
+                <div class='form__item'>
+                    <label class="form__label" for="potencial">Potencial de Vendas</label> 
                     <input 
                         id='potencial'
-                        name='potencialText'
+                        name='Potencial'
                         type='text' 
-                        class='form-control' 
+                        class='form__input' 
                     />
                 </div>
+                <input type="submit" class='home__button' value="votar" />
             </section>
-            <input type="submit" class='btn btn-outline-dark btn-block' value="votar" />
         </form>
-    
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
