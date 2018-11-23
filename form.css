@@ -82,6 +82,18 @@ body{
 .form__input--white{
     background: #fff;
 }
+
+.form__convite{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+}
+.form__convite__text{
+    margin-left: .5vw;
+    font-family: "Raleway-Light";
+    font-size: 1vw;
+}
+
 .form__button{
     margin: 3vw 0;
     padding: .5vw 3vw;
