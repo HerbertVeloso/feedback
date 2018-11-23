@@ -8,13 +8,30 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
 .header{
   display: flex;
   justify-content: center;
-  margin: 2vw 0;
+  margin: 1.5vw 0;
+}
+.header h1{
+  font-size: 2.5vw;
 }
 .header__text{
   text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .header{
+    margin: 8vw 5vw;
+  }
+  .header h1{
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header h1{
+    font-size: 5vw;
+  }
 }
 
 .home{
@@ -30,21 +47,22 @@ body{
 }
 .home__title{
   font-size: 2.5vw;
-  margin-bottom: 2vw;
+  margin-bottom: 1.5vw;
 }
 .home__text{
-  height: 5vw;
+  height: 10vw;
   display: flex;
   align-items: center;
 }
 .home__desc{
-  font-size: .9vw;
+  font-size: 1.28vw;
+  line-height: 2vw;
   text-align: center;
 }
 .home__video{
   width: 35vw;
   height: 19.5vw;
-  margin: 2vw 0 0;
+  margin: 1vw 0 0;
 }
 .home__button{
   margin: 2vw 0 0;
@@ -52,8 +70,7 @@ body{
   background: #353956;
   color: #FFF;
   font-size: 1vw;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   transition: .5s all;
@@ -64,10 +81,69 @@ body{
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .home{
+    flex-direction: column;
+    padding: 0 20vw;
+  }
+  .home__box{
+    margin-bottom: 10vw; 
+    width: 100%;
+  }
+  .home__title{
+    font-size: 4.8vw;
+    margin-bottom: 5vw;
+  }
+  .home__text{
+    height: auto;
+  }
+  .home__desc{
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+  }
+  .home__video{
+    width: 60vw;
+    height: 33.75vw;
+    margin: 5vw 0 0;
+  }
+  .home__button{
+    margin: 5vw 0;
+    padding: 3vw 10vw;
+    font-size: 2.5vw;
+    letter-spacing: .2vw;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home{
+    padding: 0 10vw;
+  }
+  .home__title{
+    font-size: 5vw;
+    margin-bottom: 7vw;
+  }
+  .home__desc{
+    font-size: 3.2vw;
+    line-height: 4vw;
+  }
+  .home__video{
+    width: 80vw;
+    height: 45vw;
+    margin: 7vw 0 0;
+  }
+  .home__button{
+    margin: 7vw 0;
+    padding: 3.5vw 12vw;
+    font-size: 3vw;
+    letter-spacing: .3vw;
+  }
+}
 
 
-
-
+.form{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw;
+}
 .form__box{
   background: #EEE;
   width: 60vw;
@@ -95,7 +171,53 @@ body{
   padding: 8px;
 }
 
-
+@media only screen and (max-width: 768px) {
+  .form{
+    padding: 0;
+  }
+  .form__box{
+    width: 80vw;
+    margin: 0 10vw 5vw;
+    padding: 5vw;
+  }
+  .form__title{
+    font-size: 3.5vw;
+    margin-bottom: 5vw;
+  }
+  .form__item{
+    width: 90%;
+    margin: 1.5vw 0;
+  }
+  .form__label{
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+  }
+  .form__input{
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .form__box{
+    width: 90vw;
+    margin: 0 5vw 5vw;
+  }
+  .form__title{
+    font-size: 4vw;
+  }
+  .form__item{
+    width: 100%;
+    margin: 2.5vw 0;
+  }
+  .form__label{
+    font-size: 3.2vw;
+    margin-bottom: 2vw;
+  }
+  .form__input{
+    padding: 12px;
+    font-size: 12px;
+  }
+}
 
 
 
@@ -107,13 +229,26 @@ body{
   margin-bottom: 1vw;
 }
 .estrelas input[type=radio] {
-    display: none;
+  display: none;
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  font-size: 2.5vw;
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+@media only screen and (max-width: 768px) {
+  .estrelas{
+    margin-bottom: 3vw;
   }
   .estrelas label i.fa:before {
-    content:'\f005';
-    font-size: 2.5vw;
-    color: #FC0;
+    font-size: 5vw;
   }
-  .estrelas input[type=radio]:checked ~ label i.fa:before {
-    color: #CCC;
+}
+@media only screen and (max-width: 576px) {
+  .estrelas label i.fa:before {
+    font-size: 6.5vw;
   }
+}
