@@ -113,9 +113,6 @@ body{
     box-shadow: .1vw .3vw 0 #333438;
     text-decoration: none;
  }
- .form__button--resp{
-     display: none;
- }
  @media only screen and (max-width: 768px) {
     .form__container{
         width: 90vw;
@@ -125,6 +122,10 @@ body{
     .form__box{
         width: 100%;
         margin: 0 0 5vw;
+    }
+    .form__box:last-child{
+        width: 100%;
+        margin-right: 5vw;
     }
     .form__item{
         margin: 3vw 0;
@@ -140,7 +141,6 @@ body{
         font-size: 3vw;
     }
     .form__button{
-        display: none;
         margin: 5vw 0 10vw;
         padding: 3vw 10vw;
         font-size: 4vw;
@@ -150,8 +150,12 @@ body{
     .form__button:hover{
         box-shadow: .5vw 1vw 0 #333438;
      }
-    .form__button--resp{
-        display: block;
+    .form__convite{
+        margin-top: 2vw;
+    }
+    .form__convite__text{
+        margin-left: 1vw;
+        font-size: 2.8vw;
     }
 }
 

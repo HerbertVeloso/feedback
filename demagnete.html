@@ -15,8 +15,8 @@
         </a>
         <h1 class="header__text">DeMagnete VR</h1>
     </header>
-    <main class="form">
-        <form action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST">
+    <form action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST">
+        <main class="form">
             <input type="hidden" name="Jogo" value="DeMagnete VR" />
             <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/" />
             <section class="estrelas">
@@ -75,6 +75,16 @@
                         />
                     </div>
                     <div class='form__item'>
+                            <label class="form__label" for="trailer">Trailer</label> 
+                            <input 
+                                id='trailer'
+                                name='Trailer'
+                                type='text' 
+                                class='form__input' 
+                                placeholder="Justificativa..."
+                            />
+                        </div>
+                    <div class='form__item'>
                         <label class="form__label" for="potencial">Potencial de Vendas</label> 
                         <input 
                             id='potencial'
@@ -84,7 +94,6 @@
                             placeholder="Justificativa..."
                         />
                     </div>
-                    <input type="submit" class='form__button' value="votar" />
                 </div>
                 <div class="form__box">
                     <div class='form__item'>
@@ -125,9 +134,9 @@
                         <label class="form__convite__text" for="convite">Desejo receber convites para futuros testes</label>
                     </div>
                 </div>
-                <input type="submit" class='form__button form__button--resp' value="votar" />
             </section>
-        </form>
-    </main>
+            <input type="submit" class='form__button' value="votar" />
+        </main>
+    </form>
 </body>
 </html>
