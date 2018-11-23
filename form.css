@@ -1,0 +1,172 @@
+@import url('fonts/fonts.css');
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(65deg,#fff 51%,#eaeaea 51%) no-repeat;
+  background-attachment: scroll;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+}
+.header__image{
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    width: 10vw;
+}
+.header__text{
+    font-family: "Raleway-Medium";
+    font-size: 4.3vw;
+    align-self: center;
+}
+@media only screen and (max-width: 768px) {
+    .header{
+      margin: 8vw 5vw 3vw;
+    }
+    .header__image{
+      width: 20vw;
+      top: 8vw;
+      left: 5vw;
+    }
+    .header__text{
+      margin-top: 15vw;
+      font-size: 8vw;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__container{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+.form__box{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__box:last-child{
+    width: 35vw;
+    margin-right: 4vw;
+}
+.form__item{
+    width: 100%;
+    margin: .5vw 0;
+    display: flex;
+    flex-direction: column;
+}
+.form__label{
+    margin-left: 1vw;
+    margin-bottom: .5vw;
+    font-family: "Raleway-Light";
+    font-size: 1.4vw;
+  }
+.form__input{
+    background: #eaeaea;
+    padding: 12px;
+    font-family: "Raleway-Light";
+    font-size: 1vw;
+}
+.form__input--white{
+    background: #fff;
+}
+.form__button{
+    margin: 3vw 0;
+    padding: .5vw 3vw;
+    align-self: center;
+    background: #333438;
+    color: #FFF;
+    font-family: "Raleway-Medium";
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1vw;
+    box-shadow: .1vw .3vw 0 #656568;
+    transition: .5s all;
+ }
+ .form__button:hover{
+    background: #656568;
+    box-shadow: .1vw .3vw 0 #333438;
+    text-decoration: none;
+ }
+ .form__button--resp{
+     display: none;
+ }
+ @media only screen and (max-width: 768px) {
+    .form__container{
+        width: 90vw;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form__box{
+        width: 100%;
+        margin: 0 0 5vw;
+    }
+    .form__item{
+        margin: 3vw 0;
+    }
+    .form__label{
+        margin-left: 3vw;
+        margin-bottom: 1vw;
+        font-size: 4vw;
+    }
+    .form__input{
+        background: #b5b4b4;
+        padding: 10px;
+        font-size: 3vw;
+    }
+    .form__button{
+        display: none;
+        margin: 5vw 0 10vw;
+        padding: 3vw 10vw;
+        font-size: 4vw;
+        letter-spacing: .2vw;
+        box-shadow: .5vw 1vw 0 #656568;
+    }
+    .form__button:hover{
+        box-shadow: .5vw 1vw 0 #333438;
+     }
+    .form__button--resp{
+        display: block;
+    }
+}
+
+
+.estrelas{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+.estrelas input[type=radio] {
+    display: none;
+}
+.estrelas label i.fa:before {
+    content:'\f005';
+    font-size: 2.5vw;
+    color: #FC0;
+    margin: 0 .7vw;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #b5b4b4;
+}
+@media only screen and (max-width: 768px) {
+    .estrelas{
+        margin-bottom: 5vw;
+    }
+    .estrelas label i.fa:before {
+        font-size: 6vw;
+        margin: 0 1vw;
+    }
+}

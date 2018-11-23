@@ -6,115 +6,122 @@
     <title>Game Feedback</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
 </head>
 <body>
     <header class="header">
-        <h1 class="">DeMagnete VR</h1>
+        <a href="index.html">
+            <img class="header__image" src="assets/logoGT.png">
+        </a>
+        <h1 class="header__text">DeMagnete VR</h1>
     </header>
     <main class="form">
         <form action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST">
-            <section class="form__box">
-                <h2 class="form__title">Informe seus dados  </h2>
-                <input type="hidden" name="Jogo" value="DeMagnete VR" />
-                <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/" />
-                <div class='form__item'>
-                    <label class="form__label" for="nome">*Nome:</label>
-                    <input 
-                        id='nome'
-                        name='Nome'
-                        type='text' 
-                        class='form__input' 
-                        placeholder='Nome Sobrenome' 
-                        required 
-                    />
-                </div>
-                <div class='form__item'>
-                    <label class="form__label" for="whatsapp">*Whatsapp:</label>
-                    <input 
-                        id='whatsapp'
-                        name='Whatsapp'
-                        type='text' 
-                        class='form__input' 
-                        placeholder='(99)9999-9999' 
-                        required 
-                    />
-                </div>
-                <div class='form__item'>
-                    <label class="form__label" for="email">*E-mail:</label>
-                    <input 
-                        id='email'
-                        name='Email'
-                        type='email' 
-                        class='form__input' 
-                        placeholder='email@exemplo.com' 
-                        required
-                    />
-                </div>
+            <input type="hidden" name="Jogo" value="DeMagnete VR" />
+            <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/" />
+            <section class="estrelas">
+                <input type="radio" id="cm_star-empty" name="Geral" value="" checked/>
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="Geral" value="1"/>
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="Geral" value="2"/>
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="Geral" value="3"/>
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="Geral" value="4"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="Geral" value="5"/>
             </section>
-            <section class="form__box">
-                <h2 class="form__title">Avalie o jogo</h2>
-                <div class='geralRating'>
-                    <div class="estrelas">
-                        <input type="radio" id="cm_star-empty" name="Geral" value="" checked/>
-                        <label for="cm_star-1"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-1" name="Geral" value="1"/>
-                        <label for="cm_star-2"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-2" name="Geral" value="2"/>
-                        <label for="cm_star-3"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-3" name="Geral" value="3"/>
-                        <label for="cm_star-4"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-4" name="Geral" value="4"/>
-                        <label for="cm_star-5"><i class="fa"></i></label>
-                        <input type="radio" id="cm_star-5" name="Geral" value="5"/>
-                      </div>
+            <section class="form__container">
+                <div class="form__box">
+                    <div class='form__item'>
+                        <label class="form__label" for="visual">Visual</label>
+                        <input 
+                            id='visual'
+                            name='Visual'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Justificativa..."
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="musica">Música</label> 
+                        <input 
+                            id='musica'
+                            name='Musica'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Justificativa..."
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="diversao">Diversão</label> 
+                        <input 
+                            id='diversao'
+                            name='Diversao'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Justificativa..."
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="inovacao">Inovação</label> 
+                        <input 
+                            id='inovacao'
+                            name='Inovacao'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Justificativa..."
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="potencial">Potencial de Vendas</label> 
+                        <input 
+                            id='potencial'
+                            name='Potencial'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Justificativa..."
+                        />
+                    </div>
+                    <input type="submit" class='form__button' value="votar" />
                 </div>
-                <div class='form__item'>
-                    <label class="form__label" for="visual">Visual</label>
-                    <input 
-                        id='visual'
-                        name='Visual'
-                        type='text' 
-                        class='form__input' 
-                    />
+                <div class="form__box">
+                    <div class='form__item'>
+                        <label class="form__label" for="nome">*Nome:</label>
+                        <input 
+                            id='nome'
+                            name='Nome'
+                            type='text' 
+                            class='form__input form__input--white' 
+                            placeholder='Nome Sobrenome' 
+                            required 
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="whatsapp">*Whatsapp:</label>
+                        <input 
+                            id='whatsapp'
+                            name='Whatsapp'
+                            type='text' 
+                            class='form__input form__input--white' 
+                            placeholder='(99)9999-9999' 
+                            required 
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="email">*E-mail:</label>
+                        <input 
+                            id='email'
+                            name='Email'
+                            type='email' 
+                            class='form__input form__input--white' 
+                            placeholder='email@exemplo.com' 
+                            required
+                        />
+                    </div>
                 </div>
-                <div class='form__item'>
-                    <label class="form__label" for="musica">Música</label> 
-                    <input 
-                        id='musica'
-                        name='Musica'
-                        type='text' 
-                        class='form__input' 
-                    />
-                </div>
-                <div class='form__item'>
-                    <label class="form__label" for="diversao">Diversão</label> 
-                    <input 
-                        id='diversao'
-                        name='Diversao'
-                        type='text' 
-                        class='form__input' 
-                    />
-                </div>
-                <div class='form__item'>
-                    <label class="form__label" for="inovacao">Inovação</label> 
-                    <input 
-                        id='inovacao'
-                        name='Inovacao'
-                        type='text' 
-                        class='form__input' 
-                    />
-                </div>
-                <div class='form__item'>
-                    <label class="form__label" for="potencial">Potencial de Vendas</label> 
-                    <input 
-                        id='potencial'
-                        name='Potencial'
-                        type='text' 
-                        class='form__input' 
-                    />
-                </div>
-                <input type="submit" class='home__button' value="votar" />
+                <input type="submit" class='form__button form__button--resp' value="votar" />
             </section>
         </form>
     </main>
