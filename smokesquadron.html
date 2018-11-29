@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__image" src="assets/logoGT.png">
+        </a>
+        <h1 class="header__text">Smoke Squadron</h1>
+    </header>
+    <form action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST" autocomplete="off">
+        <main class="form">
+            <input type="hidden" name="Jogo" value="Smoke Squadron" />
+            <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/" />
+            <input type="hidden" name="Tempo" id="tempo" value="" />
+            <section class="estrelas">
+                <input type="radio" id="cm_star-empty" name="Geral" value="" checked/>
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="Geral" value="1"/>
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="Geral" value="2"/>
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="Geral" value="3"/>
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="Geral" value="4"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="Geral" value="5"/>
+            </section>
+            <section class="form__container">
+                <div class="form__box">
+                    <div class='form__item'>
+                        <label class="form__label" for="visual">Visual</label>
+                        <input 
+                            id='visual'
+                            name='Visual'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="musica">Música</label> 
+                        <input 
+                            id='musica'
+                            name='Musica'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="diversao">Diversão</label> 
+                        <input 
+                            id='diversao'
+                            name='Diversao'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="inovacao">Inovação</label> 
+                        <input 
+                            id='inovacao'
+                            name='Inovacao'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <!-- <div class='form__item'>
+                        <label class="form__label" for="trailer">Trailer</label> 
+                        <input 
+                            id='trailer'
+                            name='Trailer'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                            autocomplete="off"
+                        />
+                    </div> -->
+                    <div class='form__item'>
+                        <label class="form__label" for="potencial">Potencial de Vendas</label> 
+                        <input 
+                            id='potencial'
+                            name='Potencial'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                            autocomplete="off"
+                        />
+                    </div>
+                </div>
+                <div class="form__box">
+                    <div class='form__item'>
+                        <label class="form__label form__label--required" for="nome">Nome:</label>
+                        <input 
+                            id='nome'
+                            name='Nome'
+                            type='text' 
+                            class='form__input form__input--white' 
+                            placeholder='Nome Sobrenome' 
+                            autocomplete="off"
+                            required 
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label form__label--required" for="whatsapp">Whatsapp:</label>
+                        <input 
+                            id='whatsapp'
+                            name='Whatsapp'
+                            type='text' 
+                            class='form__input form__input--white' 
+                            placeholder='(99)9999-9999' 
+                            autocomplete="off"
+                            required 
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label form__label--required" for="email">E-mail:</label>
+                        <input 
+                            id='email'
+                            name='Email'
+                            type='email' 
+                            class='form__input form__input--white' 
+                            placeholder='email@exemplo.com' 
+                            autocomplete="off"
+                            required
+                        />
+                    </div>
+                    <div class='form__convite'>
+                        <input type="checkbox" id="convite" name="Convite" value="Sim">
+                        <label class="form__convite__text" for="convite">Desejo receber convites para futuros testes</label>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" class='form__button' value="votar" />
+        </main>
+    </form>
+    <script>
+        setInterval( 
+            () => {
+                const elemento = document.getElementById("tempo")
+                elemento.value++
+            }, 1000
+        )
+    </script>
+</body>
+</html>
