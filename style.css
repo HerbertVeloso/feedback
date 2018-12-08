@@ -50,12 +50,6 @@ body{
     align-self: center;
     margin-bottom: 6vw;
 }
-/* .trailer__video2{
-    width: 60vw;
-    height: 33.75vw;
-    align-self: center;
-    margin-top: 2vw;
-} */
 @media only screen and (max-width: 768px) {
     .trailer__video{
         width: 60vw;
