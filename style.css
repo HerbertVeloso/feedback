@@ -1,0 +1,309 @@
+@import url('fonts/fonts.css');
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(65deg,#fff 50%,#eaeaea 50%) no-repeat;
+  background-attachment: scroll;
+}
+
+/* --------------------  HEADER  -------------------- */
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+}
+.header__image{
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    width: 10vw;
+}
+.header__text{
+    font-family: "Raleway-Medium";
+    font-size: 4.3vw;
+    color: #262626;
+    align-self: center;
+}
+@media only screen and (max-width: 768px) {
+    .header{
+      margin: 8vw 5vw 3vw;
+    }
+    .header__image{
+      width: 20vw;
+      top: 8vw;
+      left: 5vw;
+    }
+    .header__text{
+      margin-top: 15vw;
+      font-size: 8vw;
+    }
+}
+
+/* --------------------  TRAILER  -------------------- */
+.trailer__video{
+    width: 40vw;
+    height: 22.5vw;
+    align-self: center;
+    margin-bottom: 6vw;
+}
+.trailer__video2{
+    width: 60vw;
+    height: 33.75vw;
+    align-self: center;
+    margin-top: 2vw;
+}
+
+/* --------------------  CLASSES GERAIS DO FORM  -------------------- */
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6vw;
+}
+.form__container{
+    width: 80vw;
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__title{
+    margin-bottom: 2vw;
+    font-family: "Raleway-Medium";
+    font-size: 3vw;
+    color: #262626;
+    align-self: center;
+}
+.form__box{
+    width: 100%;
+    padding: 2.2vw 3vw 3vw;
+    display: flex;
+    flex-direction: column;
+    background: #bfbebe;
+}
+.form__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form__rating{
+    display: flex;
+    align-items: center;
+}
+.form__label{
+    margin: .8vw 0;
+    margin-right: 1vw;
+    font-family: "Raleway-Light";
+    font-size: 1.5vw;
+}
+.form__label--perfil{
+    margin-top: 1.6vw;
+}
+.form__label--first{
+    margin-top: 0;
+}
+.form__required{
+    color: #F00;
+    font-size: 3vw;
+    line-height: 0;
+    position: relative;
+    top: .8vw;
+}
+.form__input{
+    background: #eaeaea;
+    padding: 12px;
+    font-family: "Raleway-Light";
+    font-size: 1vw;
+}
+.form__option{
+    margin-bottom: 1vw; 
+    padding: 4px;
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+}
+.form__option:last-child{
+    margin-bottom: 0; 
+}
+.form__option__label{
+    margin-right: 1vw;
+    font-family: "Raleway-Light";
+    font-size: 1.3vw;
+    color: #494848;
+}
+.form__button{
+    margin: 3vw 0;
+    padding: .5vw 3vw;
+    align-self: center;
+    background: #333438;
+    color: #FFF;
+    font-family: "Raleway-Medium";
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1vw;
+    box-shadow: .1vw .3vw 0 #656568;
+    transition: .5s all;
+ }
+ .form__button:hover{
+    background: #656568;
+    box-shadow: .1vw .3vw 0 #333438;
+    text-decoration: none;
+ }
+
+
+
+.form__option input[type=radio]{
+    margin: 0 .3vw;
+    -webkit-appearance: none;
+	background-color: #b5b4b4;
+	border: 1px solid #919191;
+	padding: 9px;
+	border-radius: 50%;
+}
+.form__option input[type=radio]:checked {
+	background-color: #4c5052;
+}
+
+/* --------------------  CONCEITO GERAL  -------------------- */
+.geral__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.geral__title{
+    font-family: "Raleway-Light";
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+/* --------------------  ESTRELAS CONCEITO GERAL  -------------------- */
+.geral{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+.geral input[type=radio] {
+    display: none;
+}
+.geral label i.fa:before {
+    content:'\f005';
+    font-size: 2.8vw;
+    color: #FC0;
+    margin: 0 .7vw;
+}
+.geral input[type=radio]:checked ~ label i.fa:before {
+    color: #b5b4b4;
+}
+@media only screen and (max-width: 768px) {
+    .estrelas{
+        margin-bottom: 5vw;
+    }
+    .estrelas label i.fa:before {
+        font-size: 6vw;
+        margin: 0 1vw;
+    }
+}
+
+
+
+
+/* --------------------  ESTRELAS VISUAL  -------------------- */
+.visual{
+    display: flex;
+    justify-content: center;
+}
+.visual input[type=radio] {
+    display: none;
+}
+.visual label i.fa:before {
+    content:'\f005';
+    font-size: 1.5vw;
+    color: #FC0;
+}
+.visual input[type=radio]:checked ~ label i.fa:before {
+    color: #919191;
+}
+/* --------------------  ESTRELAS MÚSICA  -------------------- */
+.musica{
+    display: flex;
+    justify-content: center;
+}
+.musica input[type=radio] {
+    display: none;
+}
+.musica label i.fa:before {
+    content:'\f005';
+    font-size: 1.5vw;
+    color: #FC0;
+}
+.musica input[type=radio]:checked ~ label i.fa:before {
+    color: #919191;
+}
+/* --------------------  ESTRELAS DIVERSÃO  -------------------- */
+.diversao{
+    display: flex;
+    justify-content: center;
+}
+.diversao input[type=radio] {
+    display: none;
+}
+.diversao label i.fa:before {
+    content:'\f005';
+    font-size: 1.5vw;
+    color: #FC0;
+}
+.diversao input[type=radio]:checked ~ label i.fa:before {
+    color: #919191;
+}
+/* --------------------  ESTRELAS INOVAÇÃO  -------------------- */
+.inovacao{
+    display: flex;
+    justify-content: center;
+}
+.inovacao input[type=radio] {
+    display: none;
+}
+.inovacao label i.fa:before {
+    content:'\f005';
+    font-size: 1.5vw;
+    color: #FC0;
+}
+.inovacao input[type=radio]:checked ~ label i.fa:before {
+    color: #919191;
+}
+/* --------------------  ESTRELAS TRAILER  -------------------- */
+.trailer{
+    display: flex;
+    justify-content: center;
+}
+.trailer input[type=radio] {
+    display: none;
+}
+.trailer label i.fa:before {
+    content:'\f005';
+    font-size: 1.5vw;
+    color: #FC0;
+}
+.trailer input[type=radio]:checked ~ label i.fa:before {
+    color: #919191;
+}
+/* --------------------  ESTRELAS POTENCIAL  -------------------- */
+.potencial{
+    display: flex;
+    justify-content: center;
+}
+.potencial input[type=radio] {
+    display: none;
+}
+.potencial label i.fa:before {
+    content:'\f005';
+    font-size: 1.5vw;
+    color: #FC0;
+}
+.potencial input[type=radio]:checked ~ label i.fa:before {
+    color: #919191;
+}
