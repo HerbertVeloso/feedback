@@ -17,7 +17,7 @@
     </header>
     <form action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST">
         <main class="form">
-            <!-- <iframe title='Trailer do Jogo' class="trailer__video" src="https://www.youtube.com/embed/5YGMKaTcUx0/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <iframe title='Trailer do Jogo' class="trailer__video" src="https://www.youtube.com/embed/5YGMKaTcUx0/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <input type="hidden" name="Jogo" value="DeMagnete VR" />
             <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/" />
             <input type="hidden" name="Tempo" id="tempo" value="" />
@@ -234,7 +234,7 @@
                 <h2 class="form__title">Perfil Gamer</h2>
                 <div class="form__box">
                     <div class='form__item'>
-                        <p class="form__label form__label--perfil form__label--first">Você já conhecia este jogo antes? </p>
+                        <p class="form__label form__label--perfil form__label--first">Você já conhecia este jogo? </p>
                         <div class='form__option'>
                             <input type="radio" id="conhecia-sim" name="Conhecia" value="Sim" />
                             <label for="conhecia-sim" class="form__option__label">Sim</label>
@@ -244,7 +244,7 @@
                     </div>
                     <div class='form__item'>
                         <p class="form__label form__label--perfil">Das opções abaixo, qual você diria que é o seu gênero favorito de jogo?</p>
-                        <div class='form__option'>
+                        <div class='form__option form__option--wrap'>
                             <input type="radio" id="genero-puzzle" name="Genero" value="Puzzle" />
                             <label for="genero-puzzle" class="form__option__label">Puzzle</label>
                             <input type="radio" id="genero-acao" name="Genero" value="Ação" />
@@ -304,10 +304,10 @@
                 </div>
             </section>
             <input type="submit" class='form__button' value="Votar" />
-            <section class="form__container">
+            <!-- <section class="form__container">
                 <h2 class="form__title">Trailer</h2>
                 <iframe title='Trailer do Jogo' class="trailer__video2" src="https://www.youtube.com/embed/5YGMKaTcUx0/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
+            </section> -->
         </main>
     </form>
     <script>

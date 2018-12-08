@@ -50,13 +50,20 @@ body{
     align-self: center;
     margin-bottom: 6vw;
 }
-.trailer__video2{
+/* .trailer__video2{
     width: 60vw;
     height: 33.75vw;
     align-self: center;
     margin-top: 2vw;
+} */
+@media only screen and (max-width: 768px) {
+    .trailer__video{
+        width: 60vw;
+        height: 33.75vw;
+        align-self: center;
+        margin-bottom: 8vw;
+    }
 }
-
 /* --------------------  CLASSES GERAIS DO FORM  -------------------- */
 .form{
     display: flex;
@@ -71,6 +78,12 @@ body{
     flex-direction: column;
     align-items: center;
 }
+@media only screen and (max-width: 768px) {
+    .form__container{
+        width: 90vw;
+        margin-top: 8vw;
+    }
+}
 .form__title{
     margin-bottom: 2vw;
     font-family: "Raleway-Medium";
@@ -78,12 +91,22 @@ body{
     color: #262626;
     align-self: center;
 }
+@media only screen and (max-width: 768px) {
+    .form__title{
+        font-size: 5vw;
+    }
+}
 .form__box{
     width: 100%;
-    padding: 2.2vw 3vw 3vw;
+    padding: 3vw;
     display: flex;
     flex-direction: column;
     background: #bfbebe;
+}
+@media only screen and (max-width: 768px) {
+    .form__box{
+        padding: 4vw;
+    }
 }
 .form__item{
     width: 100%;
@@ -100,8 +123,19 @@ body{
     font-family: "Raleway-Light";
     font-size: 1.5vw;
 }
+@media only screen and (max-width: 768px) {
+    .form__label{
+        margin: 2vw 2vw 2vw 0;
+        font-size: 3.8vw;
+    }
+}
 .form__label--perfil{
     margin-top: 1.6vw;
+}
+@media only screen and (max-width: 768px) {
+    .form__label--perfil{
+        margin-top: 4vw;
+    }
 }
 .form__label--first{
     margin-top: 0;
@@ -113,11 +147,22 @@ body{
     position: relative;
     top: .8vw;
 }
+@media only screen and (max-width: 768px) {
+    .form__required{
+        font-size: 7vw;
+        top: 1.6vw;
+    }
+}
 .form__input{
     background: #eaeaea;
     padding: 12px;
     font-family: "Raleway-Light";
     font-size: 1vw;
+}
+@media only screen and (max-width: 768px) {
+    .form__input{
+        font-size: 3vw;
+    }
 }
 .form__option{
     margin-bottom: 1vw; 
@@ -125,6 +170,16 @@ body{
     background: #eaeaea;
     display: flex;
     align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .form__option{
+        margin-bottom: 2vw; 
+    }
+}
+@media only screen and (max-width: 768px) {
+    .form__option--wrap{
+        flex-wrap: wrap;
+    }
 }
 .form__option:last-child{
     margin-bottom: 0; 
@@ -134,6 +189,11 @@ body{
     font-family: "Raleway-Light";
     font-size: 1.3vw;
     color: #494848;
+}
+@media only screen and (max-width: 768px) {
+    .form__option__label{
+        font-size: 3.2vw;
+    }
 }
 .form__button{
     margin: 3vw 0;
@@ -154,6 +214,18 @@ body{
     box-shadow: .1vw .3vw 0 #333438;
     text-decoration: none;
  }
+ @media only screen and (max-width: 768px) {
+    .form__button{
+        margin: 5vw 0 10vw;
+        padding: 3vw 10vw;
+        font-size: 4vw;
+        letter-spacing: .2vw;
+        box-shadow: .5vw 1vw 0 #656568;
+    }
+    .form__button:hover{
+        box-shadow: .5vw 1vw 0 #333438;
+     }
+}
 
 
 
@@ -164,6 +236,11 @@ body{
 	border: 1px solid #919191;
 	padding: 9px;
 	border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
+    .form__option input[type=radio]{
+        margin: .5vw 1vw .5vw .5vw;
+    }
 }
 .form__option input[type=radio]:checked {
 	background-color: #4c5052;
@@ -179,6 +256,11 @@ body{
     font-family: "Raleway-Light";
     font-size: 1.4vw;
     font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    .geral__title{
+        font-size: 2.5vw;
+    }
 }
 /* --------------------  ESTRELAS CONCEITO GERAL  -------------------- */
 .geral{
@@ -199,10 +281,10 @@ body{
     color: #b5b4b4;
 }
 @media only screen and (max-width: 768px) {
-    .estrelas{
-        margin-bottom: 5vw;
+    .geral{
+        margin-bottom: 2vw;
     }
-    .estrelas label i.fa:before {
+    .geral label i.fa:before {
         font-size: 6vw;
         margin: 0 1vw;
     }
@@ -306,4 +388,12 @@ body{
 }
 .potencial input[type=radio]:checked ~ label i.fa:before {
     color: #919191;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .visual label i.fa:before, .musica label i.fa:before, .diversao label i.fa:before, .inovacao label i.fa:before,.trailer label i.fa:before, .potencial label i.fa:before{
+        font-size: 4vw;
+    }
 }
