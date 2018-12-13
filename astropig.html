@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__image" src="assets/logoGT.png" alt="Logo Gamer Trials">
+        </a>
+        <h1 class="header__text">Astro Pig</h1>
+    </header>
+    <form action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST">
+        <main class="form">
+            <input type="hidden" name="Jogo" value="Astro Pig" />
+            <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/" />
+            <input type="hidden" name="Tempo" id="tempo" value="" />
+            <section class="geral__container">
+                <div class="geral">
+                    <input type="radio" id="geral_star-empty" name="Geral" value="" checked/>
+                    <label for="geral_star-1"><i class="fa"></i></label>
+                    <input type="radio" id="geral_star-1" name="Geral" value="1"/>
+                    <label for="geral_star-2"><i class="fa"></i></label>
+                    <input type="radio" id="geral_star-2" name="Geral" value="2"/>
+                    <label for="geral_star-3"><i class="fa"></i></label>
+                    <input type="radio" id="geral_star-3" name="Geral" value="3"/>
+                    <label for="geral_star-4"><i class="fa"></i></label>
+                    <input type="radio" id="geral_star-4" name="Geral" value="4"/>
+                    <label for="geral_star-5"><i class="fa"></i></label>
+                    <input type="radio" id="geral_star-5" name="Geral" value="5"/>
+                </div>
+                <label class="geral__title">Avaliação Geral</label>
+            </section>
+            <section class="form__container">
+                <h2 class="form__title">Dados Pessoais</h2>
+                <div class="form__box">
+                    <div class='form__item'>
+                        <label class="form__label form__label--first" for="nome">Nome:<span class="form__required">*</span></label>
+                        <input 
+                            id='nome'
+                            name='Nome'
+                            type='text' 
+                            class='form__input form__input--white' 
+                            placeholder='Nome Sobrenome' 
+                            required 
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="whatsapp">Whatsapp:<span class="form__required">*</span></label>
+                        <input 
+                            id='whatsapp'
+                            name='Whatsapp'
+                            type='text' 
+                            class='form__input form__input--white' 
+                            placeholder='(99)9999-9999' 
+                            required 
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label" for="email">E-mail:<span class="form__required">*</span></label>
+                        <input 
+                            id='email'
+                            name='Email'
+                            type='email' 
+                            class='form__input form__input--white' 
+                            placeholder='email@exemplo.com' 
+                            required
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="form__container">
+                <h2 class="form__title">Avaliação do Jogo</h2>
+                <div class="form__box">
+                    <div class='form__item'>
+                        <div class="form__rating">
+                            <label class="form__label form__label--first" for="visual">Visual</label>
+                            <div class="visual">
+                                <input type="radio" id="visual_star-empty" name="VisualRating" value="" checked/>
+                                <label for="visual_star-1"><i class="fa"></i></label>
+                                <input type="radio" id="visual_star-1" name="VisualRating" value="1"/>
+                                <label for="visual_star-2"><i class="fa"></i></label>
+                                <input type="radio" id="visual_star-2" name="VisualRating" value="2"/>
+                                <label for="visual_star-3"><i class="fa"></i></label>
+                                <input type="radio" id="visual_star-3" name="VisualRating" value="3"/>
+                                <label for="visual_star-4"><i class="fa"></i></label>
+                                <input type="radio" id="visual_star-4" name="VisualRating" value="4"/>
+                                <label for="visual_star-5"><i class="fa"></i></label>
+                                <input type="radio" id="visual_star-5" name="VisualRating" value="5"/>
+                            </div>
+                        </div>
+                        <input 
+                            id='visual'
+                            name='Visual'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <div class="form__rating">
+                            <label class="form__label" for="musica">Música</label>
+                            <div class="musica">
+                                <input type="radio" id="musica_star-empty" name="MusicaRating" value="" checked/>
+                                <label for="musica_star-1"><i class="fa"></i></label>
+                                <input type="radio" id="musica_star-1" name="MusicaRating" value="1"/>
+                                <label for="musica_star-2"><i class="fa"></i></label>
+                                <input type="radio" id="musica_star-2" name="MusicaRating" value="2"/>
+                                <label for="musica_star-3"><i class="fa"></i></label>
+                                <input type="radio" id="musica_star-3" name="MusicaRating" value="3"/>
+                                <label for="musica_star-4"><i class="fa"></i></label>
+                                <input type="radio" id="musica_star-4" name="MusicaRating" value="4"/>
+                                <label for="musica_star-5"><i class="fa"></i></label>
+                                <input type="radio" id="musica_star-5" name="MusicaRating" value="5"/>
+                            </div>
+                        </div>
+                        <input 
+                            id='musica'
+                            name='Musica'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <div class="form__rating">
+                            <label class="form__label" for="diversao">Diversão</label>
+                            <div class="diversao">
+                                <input type="radio" id="diversao_star-empty" name="DiversaoRating" value="" checked/>
+                                <label for="diversao_star-1"><i class="fa"></i></label>
+                                <input type="radio" id="diversao_star-1" name="DiversaoRating" value="1"/>
+                                <label for="diversao_star-2"><i class="fa"></i></label>
+                                <input type="radio" id="diversao_star-2" name="DiversaoRating" value="2"/>
+                                <label for="diversao_star-3"><i class="fa"></i></label>
+                                <input type="radio" id="diversao_star-3" name="DiversaoRating" value="3"/>
+                                <label for="diversao_star-4"><i class="fa"></i></label>
+                                <input type="radio" id="diversao_star-4" name="DiversaoRating" value="4"/>
+                                <label for="diversao_star-5"><i class="fa"></i></label>
+                                <input type="radio" id="diversao_star-5" name="DiversaoRating" value="5"/>
+                            </div>
+                        </div>
+                        <input 
+                            id='diversao'
+                            name='Diversao'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <div class="form__rating">
+                            <label class="form__label" for="inovacao">Inovação</label>
+                            <div class="inovacao">
+                                <input type="radio" id="inovacao_star-empty" name="InovacaoRating" value="" checked/>
+                                <label for="inovacao_star-1"><i class="fa"></i></label>
+                                <input type="radio" id="inovacao_star-1" name="InovacaoRating" value="1"/>
+                                <label for="inovacao_star-2"><i class="fa"></i></label>
+                                <input type="radio" id="inovacao_star-2" name="InovacaoRating" value="2"/>
+                                <label for="inovacao_star-3"><i class="fa"></i></label>
+                                <input type="radio" id="inovacao_star-3" name="InovacaoRating" value="3"/>
+                                <label for="inovacao_star-4"><i class="fa"></i></label>
+                                <input type="radio" id="inovacao_star-4" name="InovacaoRating" value="4"/>
+                                <label for="inovacao_star-5"><i class="fa"></i></label>
+                                <input type="radio" id="inovacao_star-5" name="InovacaoRating" value="5"/>
+                            </div>
+                        </div>
+                        <input 
+                            id='inovacao'
+                            name='Inovacao'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <div class="form__rating">
+                            <label class="form__label" for="trailer">Trailer</label>
+                            <div class="trailer">
+                                <input type="radio" id="trailer_star-empty" name="TrailerRating" value="" checked/>
+                                <label for="trailer_star-1"><i class="fa"></i></label>
+                                <input type="radio" id="trailer_star-1" name="TrailerRating" value="1"/>
+                                <label for="trailer_star-2"><i class="fa"></i></label>
+                                <input type="radio" id="trailer_star-2" name="TrailerRating" value="2"/>
+                                <label for="trailer_star-3"><i class="fa"></i></label>
+                                <input type="radio" id="trailer_star-3" name="TrailerRating" value="3"/>
+                                <label for="trailer_star-4"><i class="fa"></i></label>
+                                <input type="radio" id="trailer_star-4" name="TrailerRating" value="4"/>
+                                <label for="trailer_star-5"><i class="fa"></i></label>
+                                <input type="radio" id="trailer_star-5" name="TrailerRating" value="5"/>
+                            </div>
+                        </div>
+                        <input 
+                            id='trailer'
+                            name='Trailer'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                        />
+                    </div>
+                    <div class='form__item'>
+                        <div class="form__rating">
+                            <label class="form__label" for="potencial">Potencial de Vendas</label>
+                            <div class="potencial">
+                                <input type="radio" id="potencial_star-empty" name="PotencialRating" value="" checked/>
+                                <label for="potencial_star-1"><i class="fa"></i></label>
+                                <input type="radio" id="potencial_star-1" name="PotencialRating" value="1"/>
+                                <label for="potencial_star-2"><i class="fa"></i></label>
+                                <input type="radio" id="potencial_star-2" name="PotencialRating" value="2"/>
+                                <label for="potencial_star-3"><i class="fa"></i></label>
+                                <input type="radio" id="potencial_star-3" name="PotencialRating" value="3"/>
+                                <label for="potencial_star-4"><i class="fa"></i></label>
+                                <input type="radio" id="potencial_star-4" name="PotencialRating" value="4"/>
+                                <label for="potencial_star-5"><i class="fa"></i></label>
+                                <input type="radio" id="potencial_star-5" name="PotencialRating" value="5"/>
+                            </div>
+                        </div>
+                        <input 
+                            id='potencial'
+                            name='Potencial'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="form__container">
+                <h2 class="form__title">Perfil Gamer</h2>
+                <div class="form__box">
+                    <div class='form__item'>
+                        <p class="form__label form__label--perfil form__label--first">Você já conhecia este jogo? </p>
+                        <div class='form__option'>
+                            <input type="radio" id="conhecia-sim" name="Conhecia" value="Sim" />
+                            <label for="conhecia-sim" class="form__option__label">Sim</label>
+                            <input type="radio" id="conhecia-nao" name="Conhecia" value="Não" />
+                            <label for="conhecia-nao" class="form__option__label">Não</label>
+                        </div>
+                    </div>
+                    <div class='form__item'>
+                        <p class="form__label form__label--perfil">Das opções abaixo, qual você diria que é o seu gênero favorito de jogo?</p>
+                        <div class='form__option form__option--wrap'>
+                            <input type="radio" id="genero-puzzle" name="Genero" value="Puzzle" />
+                            <label for="genero-puzzle" class="form__option__label">Puzzle</label>
+                            <input type="radio" id="genero-acao" name="Genero" value="Ação" />
+                            <label for="genero-acao" class="form__option__label">Ação</label>
+                            <input type="radio" id="genero-aventura" name="Genero" value="Aventura" />
+                            <label for="genero-aventura" class="form__option__label">Aventura</label>
+                            <input type="radio" id="genero-rpg" name="Genero" value="RPG" />
+                            <label for="genero-rpg" class="form__option__label">RPG</label>
+                            <input type="radio" id="genero-shooter" name="Genero" value="Shooter" />
+                            <label for="genero-shooter" class="form__option__label">Shooter</label>
+                            <input type="radio" id="genero-estrategia" name="Genero" value="Estratégia" />
+                            <label for="genero-estrategia" class="form__option__label">Estratégia</label>
+                            <input type="radio" id="genero-esporte" name="Genero" value="Esporte" />
+                            <label for="genero-esporte" class="form__option__label">Esporte</label>
+                            <input type="radio" id="genero-outro" name="Genero" value="Outro" />
+                            <label for="genero-outro" class="form__option__label">Outro</label>
+                        </div>
+                    </div>
+                    <div class='form__item'>
+                        <p class="form__label form__label--perfil">Em média, quantas horas você gasta por semana jogando jogos digitais?<span class="form__required">*</span></p>
+                        <div>
+                            <div class='form__option'>
+                                <input type="radio" id="horas-3-4" name="PerfilHoras" value="3/4h" required/>
+                                <label for="horas-3-4" class="form__option__label">Entre 8 a 20 horas semanais (3 a 4 horas por dia, em média)</label>
+                            </div>
+                            <div class='form__option'>
+                                <input type="radio" id="horas-5-6" name="PerfilHoras" value="5/6h" />
+                                <label for="horas-5-6" class="form__option__label">Entre 25 a 30 horas semanais (5 a 6 horas por dia, em média)</label>
+                            </div>
+                            <div class='form__option'>
+                                <input type="radio" id="horas-7-8" name="PerfilHoras" value="7/8" />
+                                <label for="horas-7-8" class="form__option__label">Entre 40 a 48 horas semanais (7 a 8 horas por dia, em média)</label>
+                            </div>
+                            <div class='form__option'>
+                                <input type="radio" id="horas-9" name="PerfilHoras" value="9+h" />
+                                <label for="horas-9" class="form__option__label">Mais do que 50 horas semanais (9 horas ou mais por dia, em média)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='form__item'>
+                        <p class="form__label form__label--perfil">Você gostaria de ser notificado sobre futuros testes deste jogo? E de testes de outros jogos?</p>
+                        <div class="">
+                            <div class='form__option'>
+                                <input type="radio" id="convite-esse" name="PerfilConvite" value="Testes Sobre Esse Jogo" />
+                                <label for="convite-esse" class="form__option__label">Gostaria apenas de ser notificado sobre testes deste jogo</label>
+                            </div>
+                            <div class='form__option'>
+                                <input type="radio" id="convite-todos" name="PerfilConvite" value="Testes Jogos em Geral" />
+                                <label for="convite-todos" class="form__option__label">Gostaria de ser notificado sobre testes de jogos em geral</label>
+                            </div>
+                            <div class='form__option'>
+                                <input type="radio" id="convite-nenhum" name="PerfilConvite" value="Não Gostaria" />
+                                <label for="convite-nenhum" class="form__option__label">Não gostaria de ser notificado sobre testes de jogos</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" class='form__button' value="Votar" />
+        </main>
+    </form>
+    <script>
+        setInterval( 
+            () => {
+                const elemento = document.getElementById("tempo")
+                elemento.value++
+            }, 1000
+        )
+    </script>
+</body>
+</html>
