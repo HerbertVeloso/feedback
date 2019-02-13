@@ -125,6 +125,10 @@ body{
     margin-bottom: 10vw; 
     width: 60vw;
   }
+  .home__image{
+    width: 35vw;
+    margin-bottom: 5vw;
+  }
   .home__title{
     font-size: 4.8vw;
     margin-bottom: 5vw;
