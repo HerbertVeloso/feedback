@@ -13,12 +13,13 @@
         <a href="index.html">
             <img class="header__image" src="assets/logoGT.png" alt="Logo Gamer Trials">
         </a>
-        <h1 class="header__text">Portas VR</h1>
+        <h1 class="header__text">One Beat Min</h1>
     </header>
     <form action="https://formspree.io/pedro.teixeira@gamertrials.com" method="POST">
         <main class="form">
-            <input type="hidden" name="Jogo" value="Portas VR" />
-            <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/portasVR.html" />
+            <iframe title='Trailer do Jogo' class="trailer__video" src="https://www.youtube.com/embed/weseckX6ikE/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <input type="hidden" name="Jogo" value="One Beat Min" />
+            <input type="hidden" name="_next" value="https://herbertveloso.github.io/feedback/onebeatmin.html" />
             <input type="hidden" name="Tempo" id="tempo" value="" />
             <section class="geral__container">
                 <div class="geral">
@@ -299,6 +300,25 @@
                                 <label for="convite-nenhum" class="form__option__label">Não gostaria de ser notificado sobre testes de jogos</label>
                             </div>
                         </div>
+                    </div>
+                    <div class='form__item'>
+                        <p class="form__label form__label--perfil">Gosta de jogos de ritmo?</p>
+                        <div class='form__option'>
+                            <input type="radio" id="ritmo-sim" name="Ritmo" value="Sim" />
+                            <label for="ritmo-sim" class="form__option__label">Sim</label>
+                            <input type="radio" id="ritmo-nao" name="Ritmo" value="Não" />
+                            <label for="ritmo-nao" class="form__option__label">Não</label>
+                        </div>
+                    </div>
+                    <div class='form__item'>
+                        <label class="form__label form__label--perfil" for="cativou">O que mais te cativou no jogo? Pode dar exemplos?</label>
+                        <input 
+                            id='cativou'
+                            name='Cativou'
+                            type='text' 
+                            class='form__input' 
+                            placeholder="Deixe um comentário"
+                        />
                     </div>
                 </div>
             </section>
